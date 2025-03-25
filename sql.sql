@@ -45,11 +45,11 @@ INSERT INTO `pessoa` (`id`, `nome`, `idade`, `cpf`, `rg`, `endereco`, `telefone`
 
 /* matricula */
 INSERT INTO `matricula` (`id`, `idpessoa`, `idcurso`) VALUES
-(2, 4, 1),
-(3, 1, 2),
-(4, 3, 2),
-(5, 2, 3),
-(6, 5, 3);
+(1, 4, 1),
+(2, 1, 2),
+(3, 3, 2),
+(4, 2, 3),
+(5, 5, 3);
 
 ---
 
@@ -67,6 +67,17 @@ FROM
     )
     inner join curso on (
     	curso.id = matricula.idcurso
-    )
-WHERE
-	matricula.id = 1;
+    );
+
+/* SQL - INSERIR */
+/* 
+    Sintaxe:
+    INSERT INTO table_name (column1, column2, column3, ...) VALUES (value1, value2, value3, ...);
+*/
+INSERT INTO curso (id, nome, descricao) VALUES (4, 'Criação de Sites', 'Tudo sobre HTML, CSS e JavaScript');
+
+/* SQL - ATUALIZAR */
+
+/* SQL - APAGAR */
+
+/* SQL - VISUALIZAR */

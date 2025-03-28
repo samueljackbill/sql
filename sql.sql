@@ -85,5 +85,23 @@ SELECT * FROM pessoa WHERE id = 4;
 */
 
 /* SQL - U - UPDATE - ATUALIZAR */
+/*
+Sintaxe:
+UPDATE table_name
+SET column1 = value1, column2 = value2, ...
+WHERE condition;
+
+UPDATE pessoa
+SET nome = 'Nome Alterado'
+WHERE id = 1;
+*/
 
 /* SQL - D - DELETE - APAGAR */
+/*
+Sintaxe:
+DELETE FROM table_name
+WHERE condition;
+
+DELETE FROM pessoa
+WHERE id = 1;
+*/
